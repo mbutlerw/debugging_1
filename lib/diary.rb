@@ -14,6 +14,6 @@ class Diary
   private
 
   def not_free?(appointment)
-    appointments.map(&:time).include? appointment.time
+    appointments.map(&:time).includes? appointment.time
   end
 end
